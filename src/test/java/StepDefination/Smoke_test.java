@@ -53,7 +53,7 @@ public class Smoke_test {
 		
 	}
 	@Before
-public static void config(Scenario scenario) throws Exception {
+public static void config(Scenario scenario) {
 		scnName=scenario.getName();
 		System.out.println(scenario.getName());
 

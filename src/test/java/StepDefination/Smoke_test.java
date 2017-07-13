@@ -52,7 +52,12 @@ public class Smoke_test {
 		System.out.println(obj_type);
 		
 	}
-	
+	@Before
+public static void config(Scenario scenario) throws Exception {
+		scnName=scenario.getName();
+		System.out.println(scenario.getName());
+
+}
 	
 	@After
 	public static void tearDown() {

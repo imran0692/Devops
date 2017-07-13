@@ -58,13 +58,9 @@ public class Smoke_test {
 	public static void tearDown() {
 		//below block is to connect to ALM and update the status.
 		
-			Class obj=DriverMethod.class;
-			ArrayList<Field> f=new ArrayList<Field>(Arrays.asList(obj.getDeclaredFields()));
-			System.out.println(f.get(0).getName());
-			
-			if(f.contains("driver")){
-			driver.close();
-			}
+			if(!(driver==null || (driver != null && driver.toString().contains("null")))){
+    		driver.quit();
+    	}
 		
 	}
 	
@@ -107,7 +103,7 @@ public class Smoke_test {
 		WebElement dr=driver.findElement(By.id(dropdown));
 		Select s=new Select(dr);
 		s.selectByIndex(Integer.parseInt(option));
-		System.out.println("Hello");
+		
 	}
 	@Then ("^I close browser$")
 	public void close(){

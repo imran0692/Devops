@@ -6,7 +6,7 @@ Scenario: 2
 	Then I enter "selenium" in the "Search box"
 	Then I enter "selenium" in the "Google Search"
 	Given I launch "Chrome" browser
-	Then I navigate to "https://www.facebook.com" URL
+	Then I navigate to "http://www.facebook.com" URL
 	Given I select "4" from "day" dropdown
 	Given I select "10" from "month" dropdown
 	Given I select "45" from "year" dropdown
@@ -18,7 +18,7 @@ Scenario: 4
 	Then I enter "selenium" in the "Search box"
 	Then I enter "selenium" in the "Google Search"
 	Given I launch "Chrome" browser
-	Then I navigate to "https://www.facebook.com" URL
+	Then I navigate to "http://www.facebook.com" URL
 	Given I select "4" from "day" dropdown
 	Given I select "10" from "month" dropdown
 	Given I select "45" from "year" dropdown

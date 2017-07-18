@@ -54,7 +54,7 @@ public class Smoke_test {
 	}
 	@Before
 public static void config(Scenario scenario) {
-		scnName=scenario.getName();
+		
 		System.out.println(scenario.getName());
 
 }
@@ -62,7 +62,7 @@ public static void config(Scenario scenario) {
 	@After
 	public static void tearDown() {
 		//below block is to connect to ALM and update the status.
-			
+		
 			if(!(driver==null || (driver != null && driver.toString().contains("null")))){
     		driver.quit();
     	}
